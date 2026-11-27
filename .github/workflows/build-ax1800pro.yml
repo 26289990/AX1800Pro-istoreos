@@ -326,10 +326,8 @@ jobs:
           CONFIG_PACKAGE_comgt=y
           # L2. 常用插件
           CONFIG_PACKAGE_luci-app-commands=y
-          CONFIG_PACKAGE_luci-app-smartdns=y
           # L3. 上面两个插件的中文语言包
           CONFIG_PACKAGE_luci-i18n-commands-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-smartdns-zh-cn=y
           # L4. 补全
           CONFIG_PACKAGE_kmod-netlink-diag=y
           EOF
@@ -399,7 +397,6 @@ jobs:
           ksmbd-server
           samba4-server
           minidlna
-          luci-app-smartdns
           luci-app-commands
           kmod-usb-net-rndis
           kmod-netlink-diag
