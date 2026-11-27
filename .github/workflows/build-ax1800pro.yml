@@ -230,8 +230,6 @@ jobs:
           CONFIG_PACKAGE_luci-app-wol=y
           CONFIG_PACKAGE_luci-app-upnp=y
           CONFIG_PACKAGE_luci-app-ddns=y
-          CONFIG_PACKAGE_docker=y
-          CONFIG_PACKAGE_dockerd=y
           CONFIG_PACKAGE_luci-app-filetransfer=y
           CONFIG_PACKAGE_luci-lib-fs=y
           CONFIG_PACKAGE_luci-app-tn-netports=y
@@ -474,7 +472,7 @@ jobs:
             exit 1
           fi
           echo "::group::固件包清单中的界面组件"
-          grep -E "quickstart|store|taskd|samba|ksmbd|webdav|dockerman|argon|minidlna" "$MANIFEST" || echo "  （无命中）"
+          grep -E "quickstart|store|taskd|samba|ksmbd|webdav|argon|minidlna" "$MANIFEST" || echo "  （无命中）"
           echo "::endgroup::"
 
           # 固件必须真的含有首页组件，否则这次构建算白干
